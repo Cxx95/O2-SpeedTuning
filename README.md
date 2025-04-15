@@ -1,63 +1,37 @@
-# O2-SpeedTuning
-
-**Optimierte Netzwerk-Einstellungen für O2-Mobilfunk (iOS/macOS)**
-
----
-
-## **Inhalt des Pakets**
-
-- **IPv6-Deaktivierung** (`.mobileconfig`)  
-  → Blockiert IPv6 vollständig systemweit  
-  → Verhindert IPv6-Leaks bei VPN-Nutzung
-
-- **WireGuard VPN-Konfiguration** (für O2 optimiert)  
-  → Fokus: **Speed**, **Stabilität**, **IPv4-only**  
-  → Cloudflare DNS über VPN erzwungen
-
-- **Cloudflare DNS-Zwang** (`1.1.1.1`)  
-  → Werbefrei, schnell, kein Tracking  
-  → Schutz vor DNS-Leaks ohne App-Installation
+# 02-SpeedTuning  
+**Optimierte Netzwerk-Einstellungen für O2-Mobilfunk**  
 
 ---
 
-## **Download**
-
-[► O2_SpeedTuning.zip herunterladen](https://github.com/...)
-
----
-
-## **Installation & Hinweise**
-
-- **Kompatibel mit:** iOS 16–17+, macOS 13–14+
-- **Einrichtungsschritte:** enthalten in `Anleitung.pdf` im ZIP
-- **Voraussetzung:**  
-  - iPhone/iPad/Mac mit aktueller Version  
-  - „Dateien“-App und ggf. WireGuard-App (kostenlos)
-
-- **Nutzungshinweis:**  
-  → Nur für **private**, nicht-kommerzielle Verwendung  
-  → Keine Weitergabe ohne Anpassung/Quellenverweis
+## 📦 **Enthaltene Optimierungen**  
+- **IPv6-Deaktivierung** (`.mobileconfig`-Profil)  
+  - Reduziert Latenz bei O2-Netzen durch Vermeidung von IPv6-Routing.  
+- **WireGuard VPN-Konfiguration**  
+  - Optimierte Server-Einstellungen für maximale Geschwindigkeit mit O2.  
+- **Cloudflare DNS (1.1.1.1)**  
+  - Erzwungene DNS-Nutzung für schnellere Auflösung und Stabilität.  
 
 ---
 
-## **Empfohlene Nutzung**
-
-- **VPN dauerhaft aktivieren** (Passepartout oder iOS-Kurzbefehl)
-- **iPhone im Mobilfunknetz verwenden (nicht WLAN)**  
-  → Optimierung wirkt nur bei mobiler Datenverbindung
-
----
-
-## **Optional (nicht enthalten)**
-
-- **VPN-Auto-Start Shortcut** bei mobilen Daten  
-- **Supervised Mode** für Profil-Zwang auf iOS  
-- **Speedtest-Automation** (Shortcut oder Siri-Kurzbefehl)
+## ⚡ **Download & Installation**  
+- **[02_SpeedTuning.zip herunterladen](https://github.com/...)**  
+  - Enthält:  
+    - `.mobileconfig`-Profile für iOS/macOS.  
+    - WireGuard-Config-Datei (`o2-optimized.conf`).  
+    - Schritt-für-Schritt-Anleitung (`Anleitung.pdf`).  
 
 ---
 
-## **Geplant (coming soon)**
+## ℹ️ **Hinweise**  
+- **Kompatibilität**:  
+  - iOS 15+ / macOS Monterey+ (getestet mit O2-Netz).  
+- **Sicherheit**:  
+  - Keine Modifikationen an Systemdateien – nur Netzwerk-Profile.  
+- **Nutzungsbedingungen**:  
+  - Nur für private Nutzung. Keine Garantie für Geschwindigkeitssteigerungen.  
 
-- [ ] Optionale AdGuard DNS  
-- [ ] SpeedBoost für Android  
-- [ ] APN-Profil für manuelle Bandwahl (Testphase)
+---
+
+## 🔧 **Erweiterungsmöglichkeiten**  
+- **Alternative DNS-Anbieter** (z. B. Google DNS: `8.8.8.8`).  
+- **Automatisches Aktivieren/Deaktivieren** per Shortcut (iOS) oder Skript (macOS).
